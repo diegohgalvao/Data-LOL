@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik';
+    background-image: url(/img/backgrounds/background\ aatrox.jpg);
+    background-size: cover;
+}
+
+.contentFirstSingle{
+    background-color: rgba(17, 11, 41, 0.9);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.containerMenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(28, 21, 55);
+    opacity: 1;
+    padding: 15px;
+}
+
+.logo1Single, .logo2Single {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.logo2Single {
+    color: #f2bf43;
+    font-weight: 800;
+}
+
+.containerlogoData{
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.containerInputSearch{
+    display: flex;
+    justify-content: end;
+    width: 600px;
+}
+
+.iptSearch{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    color: rgb(60, 60, 60);
+}
+
+.iptSearch::placeholder{
+    font-size: 15px;
+    font-family: 'Rubik';
+    padding: 15px;
+    opacity: 0.7;
+}
+
+.iconChampion{
+    width: 90px;
+    border-radius: 10px;
+}
+
+.imgChampion{
+    box-shadow: inset 0 0 0 2px #f2bf43;
+    width: 95px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.headerChampion{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+    padding: 30px;
+}
+
+.nameChampion {
+    color: #f2bf43;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.subtitleChampion {
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.firstsInfos{
+    display: flex;
+    flex-direction: column;
+}
+
+.infosChampions{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.passiva, .habQ, .habW, .habE, .habR{
+    width: 36px;
+}
+
+.dataChampion{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.allInfos{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+}
+
+.skillPassiva, .skillQ, .skillW, .skillE, .skillR{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillPassiva p, .skillQ p, .skillW p, .skillE p, .skillR p {
+    background-color: #f2bf43;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 50%;
+    font-weight: 600;
+    margin-top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.geraisChampion{
+    display: flex;
+    margin: 30px;
+    gap: 20px;
+    color: #fff;
+}
+
+.containerFavor, .containerContra{
+    width: 50%;
+    background-color: rgb(28, 21, 55);
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+.geraisChampion h3{
+    font-weight: 600;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 20px;
+}
+
+.titleContainerDicas, .titleContainerContra, .titleContainerSkin{
+    margin-bottom: 20px;
+    color: #f2bf43;
+    font-size: 20px;
+}
+
+.containerSkins {
+    background-color: rgb(28, 21, 55);
+    margin: 0px 30px 30px 30px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.skins{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skin{
+    width: 200px;
+    border-radius: 5px;
+    border: 2px dashed #f2bf43;
+    margin-bottom: 10px;
+}
+
+.skinSingle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    width: 200px;
+}
+
+.nameSkin,.titleContainerSkin{
+    text-align: center;
+}
+
+.nameSkin{
+    font-size: 15px;
+    color: #f2bf43;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 450px){
+    .imgChampion{
+        box-shadow:none;
+    }
+
+    .iconChampion{
+        width: 90px;
+        border: 2px dashed #f2bf43;
+    }
+
+    .dataChampion{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 0px;
+    }
+
+    .nameChampion{
+        font-size: 23px;
+    }
+
+    .geraisChampion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerFavor, .containerContra {
+        width: 100%;
+    }
+
+    .skin{
+        width: 120px;
+    }
+
+    .skinSingle{
+        width: 120px;
+    }
+}

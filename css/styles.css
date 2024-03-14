@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik';
+    background-image: url(/img/backgrounds/background\ renekton.jpg);
+    background-size: cover;
+}
+
+.contentFirst{
+    background-color: rgba(18, 18, 18, 0.9);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    align-items: center;
+    width: 100%;
+}
+
+.containerLogoData{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+}
+
+.logoData{
+    display: flex;
+    flex-direction: column;
+}
+
+.parte1Logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.parte2Logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: -10px;
+}
+
+.imgLogoLOL{
+    width: 170px;
+}
+
+.logo1, .logo2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.logo2 {
+    color: #f2bf43;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.containerInputSearch{
+    display: flex;
+    width: 600px;
+    justify-content: center;
+}
+
+.iptSearch{
+    margin-top: 10px;
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    color: rgb(60, 60, 60);
+}
+
+.iptSearch::placeholder{
+    font-size: 18px;
+    font-family: 'Rubik';
+    padding: 15px;
+    opacity: 0.7;
+}
+
+.dadosSearch{
+    background-color: #fff;
+    width: 600px;
+    margin-top: 10px;
+    display: none;
+    overflow: auto;
+    margin-bottom: 50px;
+}
+
+.headerDados{
+    background-color: #191937;
+    color: #fff;
+    text-align: center;
+    padding: 7px 0px;
+}
+
+.dataChampion{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    background-color: #0d0d28;
+    color: #fff;
+    width: 100%;
+}
+
+.imageChampion{
+    width: 25px;
+}
+
+.nameChampSearch{
+    font-size: 15px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* Responsividade */
+
+@media (max-width:450px){
+
+    .contentFirst{
+        padding: 30px;
+    }
+
+    .containerLogoData{
+        width: 100%;
+    }
+
+    .containerInputSearch{
+        width: 100%;
+    }
+
+    .dadosSearch{
+        width: 100%;
+    }
+}
