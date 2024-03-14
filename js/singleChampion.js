@@ -37,7 +37,7 @@ async function viewChampion() {
         if (skin.num != 0) {
             skinsChampion += `
             <li class="skinSingle">
-                <img src="img/skins/${champion}_${skin.num}.jpg" class="skin">
+                <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${champion}_${skin.num}.jpg" class="skin">
                 <h4 class="nameSkin">${skin.name}</h4>
             </li>
             `
